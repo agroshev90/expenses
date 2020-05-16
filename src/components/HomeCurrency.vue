@@ -1,6 +1,6 @@
 <template>
   <div class="col s12 m6 l8">
-    <div class="card orange darken-3 bill-card">
+    <div class="card grey darken-1 bill-card">
       <div class="card-content white-text">
         <div class="card-header">
           <span class="card-title">Курс валют</span>
@@ -17,7 +17,7 @@
           <tbody>
           <tr v-for="cur in currencies" :key="cur">
             <td >{{cur }}</td>
-            <td>{{rates[cur].toFixed(2)}}</td>
+            <td>{{(rates['RUB'] / rates[cur]).toFixed(2) + ' ₽'}}</td>
             <td>{{date | date('date')}}</td>
           </tr>
           </tbody>
@@ -29,12 +29,12 @@
 
 <script>
 	export default {
-		name: "HomeCurrency",
+    name: "HomeCurrency",
     props: ['rates', 'date'],
-    data: () =>({
-      currencies: ['EUR','USD','RUB']
-    })
-	}
+    data: () => ({
+      currencies: ['USD', 'EUR', 'BTC']
+    }),
+  }
 </script>
 
 <style scoped>
