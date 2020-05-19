@@ -84,6 +84,9 @@
 
   export default {
     name: 'record',
+    metaInfo: {
+      title: 'Record',
+    },
     data: () => ({
       loading: true,
       categories: [],

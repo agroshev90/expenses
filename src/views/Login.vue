@@ -66,6 +66,9 @@
 
   export default {
     name: 'login',
+    metaInfo: {
+      title: 'Login',
+    },
     data: () => ({
       email: '',
       password: ''

@@ -34,6 +34,9 @@
 <script>
   export default {
     name: "detail",
+     metaInfo: {
+      title: 'Detail',
+    },
     data: () => ({
       record: null,
       loading: true

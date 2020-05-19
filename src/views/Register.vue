@@ -84,6 +84,9 @@
 
   export default {
     name: 'register',
+    metaInfo: {
+      title: 'Register',
+    },
     data: () => ({
       email: '',
       password: '',

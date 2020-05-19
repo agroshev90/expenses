@@ -33,6 +33,9 @@
 
   export default {
     name: 'planing',
+    metaInfo: {
+      title: 'Planing',
+    },
     data: () => ({
       loading: true,
       categories: [],
