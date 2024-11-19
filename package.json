@@ -10,7 +10,7 @@
   "dependencies": {
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
-    "firebase": "^7.14.2",
+    "firebase": "^10.9.0",
     "lodash": "^4.17.15",
     "materialize-css": "^1.0.0-rc.2",
     "register-service-worker": "^1.7.1",
